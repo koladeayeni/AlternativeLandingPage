@@ -1,0 +1,76 @@
+<!-- Using Bootstrap 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolade Ayeni Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-5" style="background: linear-gradient(135deg, #1f4037, #99f2c8);">
+        <div class="logo mb-4">
+            <img src="images/Logo2.jpg" alt="Portfolio Logo" class="rounded-circle" style="width: 100px;">
+        </div>
+        <h1 class="display-4 fw-bold">Kolade Ayeni</h1>
+        <p id="typed-output" class="lead mt-3"></p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-5 bg-light" data-aos="fade-up">
+        <div class="container shadow-lg p-5 rounded" style="max-width: 600px;">
+            <h2 class="display-5 fw-bold">Welcome to My Portfolio</h2>
+            <p class="lead mt-3">Explore my projects, reviews, and more!</p>
+            <a href="projects.html" class="btn btn-primary btn-lg mt-4 shadow">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white text-center py-3">
+        <p>&copy; 2024 Kolade Ayeni. All Rights Reserved.</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-linkedin"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-github"></i></a></li>
+        </ul>
+    </footer>
+
+    <!-- Typed.js Typing Effect -->
+    <script>
+        var typed = new Typed('#typed-output', {
+            strings: ["A Computer Science student at Clarkson University", "Aspiring to be a Software Engineer"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+        });
+    </script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
